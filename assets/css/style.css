@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --margin-bottom:30px;
+    --margin-ex-bottom:50px;
+    --card-padding:20px;
+    --padding-cards:
+}
+img{
+    display: block;
+}
+.margin-b-20{
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+.btn{
+    background-image:linear-gradient(orange,red);
+    padding: 10px;
+    border-radius: 6px;
+}
+.container{
+    width: 100%;
+    padding: 10px;
+}
+
+/*-------- hero section start-------- */
+.hero{
+    margin-bottom: var(--margin-ex-bottom);
+}
+.hero-img{
+    width: 100%;
+    height: 500px;
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+
+}
+.hero-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+.hero-heading{
+    font-size: 20px;
+    margin-bottom: var(--margin-bottom);
+}
+.hero-description{
+    margin-bottom: var(--margin-bottom);
+    font-size: 18px;
+    margin-bottom: var(--margin-bottom)
+}
+/* hero section End */
+
+/* donation area start */
+.donation{
+    text-align: center;
+    margin-bottom: var(--margin-ex-bottom);
+}
+.donation-heading{
+    margin-bottom: var(--margin-bottom);
+    font-size: 24px;
+}
+.donation-description{
+    margin-bottom: var(--margin-ex-bottom);
+    font-size: 18px;
+}
+.donation-cards{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.donation-card{
+    padding: var(--card-padding);
+    background:#DCDCDC ;
+    border-radius: 6px;
+    font-size: 30px;
+    margin-bottom: var(--margin-bottom);
+}
+.card2{
+    border: 1px solid red;
+    background-color: #DEB887;
+}
+/* donation area End */
+
+/* donation-planning Start */
+    .planning-cards{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        height: auto;
+        padding: 20px;
+        justify-content: space-between;
+    }
+  .crd{
+    width: 30%;
+    height: 350px;
+    padding: 15px;
+    background: #777;
+    border-radius: 6px;
+  }
+  .card-no-1{background:#FFE4C4;}
+  .card-no-2{background:#DEB887;}
+  .card-no-3{background:#BDB76B;}
+/* donation-planning End */
+
+
+
+/* Donation-plan-Start */
+
+.donation-plan-content{
+    text-align: center;
+}
+.donation-plan-heading{
+    margin-bottom: var(--margin-bottom);
+}
+.donation-plan-description{
+    margin-bottom: var(--margin-bottom);
+}
+/* Donation-plan-End */
+
+
+/* live-depend-area Start */
+.live-depend{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.live-depend-fram img{
+    border-radius: 6px;
+}
+/* live-depend-area End */
+
+
+/* Get update Start */
+.get-my-update{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin: var(--margin-ex-bottom);
+}
+.get-form{
+    width:80%;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    background:#DEB887;
+    border-radius: 6px;
+    display: flex;
+    margin-bottom:var(--margin-ex-bottom) ;
+}
+.get-input{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.btns{
+    padding: 2px;
+    position: absolute;
+    transform: translate(0,-2px);
+    margin-left: 5px;
+    background-image: linear-gradient(orange,red);
+    border-radius: 3px;
+}
+/* Get update End */
+
+/* footer start */
+footer{
+    height: 100px;
+    background: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer-heading{
+color: #a52a2a;
+}
+.footer-description{
+    color: #fff;}
+/* footer End */
+
+@media screen and (max-width:792px) {
+    .live-depend{
+        flex-wrap: wrap;
+        max-width: auto;
+        align-items: center;
+        text-align: center;
+    }
+}
+   
+@media screen and (max-width:576px) {
+    .planning-cards{
+        display: block;
+        margin:auto;
+    }
+    .crd{
+        width: 100%;
+        flex-direction: column;
+        margin: 10px auto;
+        height:200px;
+    }
+    .live-depend{
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    .donation-plan-content{
+        width: 100%;
+        padding: var(--card-padding);
+    }
+
+    
+
+}
